@@ -1,10 +1,27 @@
 .s-1 {
     background-color: aquamarine;
     .container {
-        @include mycontainer;
-        p {
-            @include pfontsets;
-            margin-bottom: 30px;
+        @extend %mycontainer;
+        @include goflex(row, space-around, flex-end, nowrap);
+        flex-wrap: wrap;
+        border: 2px solid black;
+        @media (max-width: $desktopsize) {
+            width: 90%;
+        }
+        @media (max-width: $tabletsize) {
+            justify-content: space-around;
+        }
+        .card {
+            width: 250px;
+            height: 350px;
+            background-color: yellowgreen;
+            margin: 10px;
+            transition: 0.3s;
+            &:hover {
+                background-color: lightcoral;
+                transform: scale(1.05);
+                cursor: pointer;
+            }
         }
     }
 }

@@ -1,9 +1,10 @@
 footer {
     background-color: rgb(197, 196, 196);
     .container {
-        @include mycontainer;
+        @extend %mycontainer;
         p {
             @include pfontsets;
         }
     }
 }
+

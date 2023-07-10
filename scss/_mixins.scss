@@ -6,16 +6,16 @@
     color: rgb(1, 29, 66);
 }
 
-@mixin mycontainer {
+@mixin mycontainer1 {
     max-width: 1180px;
     width: 100%;
     margin: 0 auto;
 }
 
-@mixin goflex {
+@mixin goflex($flxdr, $juscont, $alitems, $wrap) {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: nowrap;
+    flex-direction: $flxdr;
+    justify-content: $juscont;
+    align-items: $alitems;
+    flex-wrap: $wrap;
 }
