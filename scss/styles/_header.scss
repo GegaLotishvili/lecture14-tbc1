@@ -1,0 +1,25 @@
+header {
+    background-color: lightcoral;
+    .container {
+        max-width: 1180px;
+        width: 100%;
+        margin: 0 auto;
+        @include goflex;
+        .logo {
+            font-size: $myfontsize1;
+            color: $mycolor1;
+        }
+        nav {
+            max-width: 500px;
+            width: 100%;
+            ul {
+                width: 100%;
+                height: 100%;
+                @include goflex;
+                a {
+                    @include pfontsets;
+                }
+            }
+        }
+    }
+}

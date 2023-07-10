@@ -1,0 +1,10 @@
+.s-1 {
+    background-color: aquamarine;
+    .container {
+        @include mycontainer;
+        p {
+            @include pfontsets;
+            margin-bottom: 30px;
+        }
+    }
+}
